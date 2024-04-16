@@ -6,11 +6,11 @@ import { PartialType } from '@nestjs/mapped-types';
 export class CreateUserDto {
   @IsString()
   @IsNotEmpty()
-  readonly user: string;
+  readonly name: string;
 
   @IsString()
   @IsNotEmpty()
-  readonly password: string;
+  readonly email: string;
 }
 
 // el signo de interrogacion es para decir que los atributos quedan de forma opcional
